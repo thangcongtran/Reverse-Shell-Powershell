@@ -2,6 +2,7 @@
 
 ## Description
 This project provides a PowerShell script that uses Windows API functions to inject shellcode into memory and execute it as a separate thread in the system. The script utilizes functions from `kernel32.dll` to allocate memory, create a thread, and wait for the result.
+To use this you need to change line 37.
 
 ## Features
 - Allocates memory using `VirtualAlloc`.
