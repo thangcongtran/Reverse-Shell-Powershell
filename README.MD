@@ -16,5 +16,5 @@ This project provides a PowerShell script that uses Windows API functions to inj
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/thangcongtran/Reverse-Shell-Powershell.git
    cd repository
